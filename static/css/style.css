@@ -1,0 +1,213 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
+}
+
+/* ===== ANIMATION DÉFILEMENT NOM ÉCOLE ===== */
+.school-name {
+    text-align: center;
+    margin-top: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.animate-text {
+    display: inline-block;
+    font-size: 3em;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* ===== ANIMATION SIGNATURE ===== */
+.signature {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.animate-signature {
+    display: inline-block;
+    font-size: 1.5em;
+    color: #ffcc00;
+    animation: scroll 12s linear infinite;
+}
+
+/* ===== BOUTONS GRANDS ET COLORÉS ===== */
+.buttons-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.home-btn {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    padding: 35px 20px;
+    font-size: 1.8em;
+    font-weight: bold;
+    border-radius: 15px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.home-btn:hover {
+    transform: scale(1.05);
+}
+
+.home-btn i {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* ===== FORMULAIRES ===== */
+.form-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 20px;
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+.form-title {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    background: #fff;
+    color: #000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    box-shadow: 0 0 10px #ff416c;
+}
+
+.btn {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.3em;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+}
+
+/* ===== TABLEAUX ===== */
+table {
+    width: 100%;
+    color: #fff;
+    border-collapse: collapse;
+    font-size: 1.2em;
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+th {
+    background: rgba(255, 255, 255, 0.1);
+    }
+    /* ===== AUTH PAGE ===== */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.auth-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+.auth-title {
+    font-size: 2em;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.alert-error {
+    color: #ff416c;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: rgba(255, 65, 108, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.auth-footer {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1em;
+}
